@@ -1,0 +1,110 @@
+/*
+Theme Name: Portfolio theme
+Author: Alejandro
+Description: A theme to present creative work
+*/
+
+a.title{
+    text-decoration:none;
+    color: black;
+}
+
+#navmenu{
+    display: inline-block;
+    float: right;
+    right: 20px;
+    margin-bottom: 50px;
+}
+#navmenu ul {
+
+    margin: 0;
+    padding: 0;
+
+}
+#navmenu li {
+    margin-left: 20px;
+    display: inline;
+    font-weight:bold;
+
+}
+
+#navmenu a {
+    text-decoration: none;
+    color: #000;
+    font-size:20px;
+}
+
+#footer {
+    position:fixed;
+    left:0px;
+    bottom:100px;
+    height:30px;
+    width:100%;
+}
+
+#tags {
+    display: inline-block;
+    margin-left: -40px;
+}
+
+#tags a{
+    border: 1px #000000 solid;
+    border-radius: 10px;
+    background: lightgray;
+    padding:5px;
+}
+
+#tags li{
+    display: inline;
+    padding:5px;
+
+}
+
+#skills {
+    font-weight:bold;
+    margin-bottom:0px;
+}
+
+
+#filter {
+    display: inline-block;
+    margin-left:-20px;
+}
+
+#filter a{
+    font-weight:bold;
+    text-decoration: none;
+    display: block;
+}
+
+#filter ul{
+     list-style-type: none;
+ }
+
+#filter li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left:5px;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+
+
