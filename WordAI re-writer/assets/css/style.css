@@ -1,0 +1,65 @@
+/* Add any custom styles for your modal or button here */
+
+#wordai-btn {
+    display: block;
+    margin: 10px 0;
+    padding: 5px 15px;
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#wordai-options {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+}
+
+#wordai-options select,
+#wordai-options input {
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
+}
+
+#wordai-process {
+    display: block;
+    margin: 10px 0;
+    padding: 5px 15px;
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+#wordai_metabox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#wordai_metabox label {
+    font-weight: bold;
+}
+
+#wordai_metabox select,
+#wordai_metabox input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#wordai_process {
+    background-color: #0073aa;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#wordai_process:hover {
+    background-color: #005a88;
+}
