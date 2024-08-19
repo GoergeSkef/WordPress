@@ -1,0 +1,9 @@
+This plugin needs to be edited manually.
+The plugin allows wordpress users to ad WordAI rewrites to their post editing and publishing workflow.
+Before uploading to your website, visit wordai-integration.php and replace the example email and api with your own.
+
+After editing the file, zip it and upload to wp plugins.
+You should now have a wordAI dropdown in your post editor. 
+You can use this to directly send and retrive posts from WordAI.
+
+Cheers
