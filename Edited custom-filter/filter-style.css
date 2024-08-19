@@ -1,0 +1,406 @@
+/* Container for the entire layout */
+.layout-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Container for filters, ensuring full width in its 1/3 allocation */
+.filters-container {
+    width: 32%;
+    float: left;
+    box-sizing: border-box;
+    margin: 0 2% 0 0;
+}
+
+.posts-grid-container {
+    width: 66%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.software-card img {
+    width: 20%;
+    height: 150px;
+    object-fit: contain;
+    float: left;
+    margin: 0px 7% 0 2%;
+}
+
+.software-card {
+    
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 10px;
+    margin: 1% 0;
+}
+
+/* Style for each dropdown filter */
+.dropdown-filter {
+    width: 100%; /* Full width of the filters container */
+    margin: 10PX 0;
+    border: 1px solid #ccc; /* Border around dropdowns */
+    border-radius: 5px; /* Rounded corners for dropdowns */
+    background-color: #f9f9f9; /* Light background for dropdown */
+    cursor: pointer; /* Change cursor to indicate clickable */
+}
+
+/* Title of the dropdown to click on */
+.dropbtn {
+    display: block;
+    padding: 10px;
+    background-color: #1abc9c; 
+    color:#fff;
+    border-bottom: 1px solid #ccc; /* Border to separate title */
+}
+
+/* Container for the dropdown content */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: relative; /* Position relative to parent */
+}
+
+/* Styling individual feature options within dropdown */
+.feature {
+    padding: 10px;
+    border-top: 1px solid #eee; /* Slight border for each option */
+}
+
+/* Hover effect for dropdown title and options */
+.dropbtn:hover, .feature:hover {
+    background-color: #1ABCB1; /* Darker when hovered */
+    color:#fff;
+}
+
+#payment_period, #min_price, #max_price {
+    width: 100%;
+}
+label.support-label{
+    padding: 10px;
+    display: block;
+}
+label.support-label:hover{
+    background-color: #1abc9c;
+    width: 100%;
+    display: block;
+    color:#fff;
+}
+label.deployment-label{
+    padding: 10px;
+    display: block;
+}
+label.deployment-label:hover{
+    background-color: #1abc9c;
+    width: 100%;
+    display: block;
+    color:#fff;
+}
+
+
+/* Hide all features initially */
+.feature {
+    display: none;
+}
+.support-lable{
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+.deployment-lable{
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+/* Only display the first 10 features */
+.feature:nth-of-type(-n+10) {
+    display: block;
+}
+
+div#pagination {
+    padding: 4%;
+}
+
+.pagination-numbers span {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.pagination-numbers span.active {
+    font-weight: bold;
+}
+
+
+
+
+/* Software Card Items */
+
+.software-container {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.software-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.software-logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.software-info {
+    width: 71%;
+    float: left;
+    margin: 3% 0 0;
+}
+.software-info h2 {
+    font-size: 32px;
+    margin: 0 0 2%;
+}
+
+.software-rating, .software-pricing {
+    color: #666;
+}
+
+.btn.try-free {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: auto; /* Push the button to the right */
+    cursor: pointer;
+}
+
+.software-tabs {
+    margin: 2% 0 1%;
+}
+
+.tab-link {
+	color:#1abc9c;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+	margin: 1%;
+	border-bottom: 1px solid #1abc9c;
+}
+
+.tab-link.active {
+	color:#1abc9c;
+    background-color: transparent;
+    border-bottom: 3px solid #1abc9c;
+}
+ul.features {
+	margin: 10px 10px 10px 25px;
+	/* list-style: auto; */
+}
+
+.review-button {
+	background-color: #1abc9c;
+    margin: 10PX;
+    border-radius: 5PX; 
+}
+.review-button:hover {
+	background-color: #fff;
+	border: solid #1abc9c;
+	color: #1abc9c;
+    margin: 10PX;
+    border-radius: 5PX;
+}
+.software-tabs button:hover{
+	color: #fff;
+	background-color: #1abc9c;
+}
+
+.affiliate-button {
+	background-color: #1abc9c;
+    margin: 10PX;
+    border-radius: 5PX;
+}
+
+.affiliate-button:hover {
+	background-color: #fff;
+	border: solid #1abc9c;
+	color: #1abc9c;
+    margin: 10PX;
+    border-radius: 5PX;
+}
+
+.tab-content {
+    padding: 20px;
+    background: #fff;
+}
+
+.pros li {
+	list-style: none;
+}
+.card-pros, .card-cons {
+    width: 48%;
+    float: left;
+    margin: 1%;
+}
+ul.pros, ul.cons {
+    margin:0;
+}
+
+
+i.fa.fa-plus-circle {
+	color: green;
+    margin-right: 5px;
+	display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.cons li {
+	list-style: none;
+}
+
+i.fa.fa-minus-circle {
+	color: red;
+    margin-right: 5px;
+	display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.mobile-filters{
+	display: none;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .layout-container {
+        flex-direction: column;
+    }
+    .filters-container, .posts-grid-container {
+        flex: 0 0 100%;
+    }
+	/* created an issue/bug with the stars */
+	.tab-link {
+		width: 100%;
+		text-align:left;
+		border-bottom: 1px solid #1abc9c !important;
+		margin: 0px !important;
+	}
+	.tab-link.active {
+		border-bottom: 3px solid #1abc9c !important;
+	}
+}
+
+.dropbtn::after {
+    font-family: 'Font Awesome 5 Free'; /* Ensures the font icons are used */
+    content: "\f078"; /* chevron-down */
+    font-weight: 900; /* Necessary for Font Awesome solid icons */
+    padding-left: 5px;
+    float:  right;
+}
+
+.dropdown-filter.active .dropbtn::after {
+    content: "\f077"; /* Arrow up when active */
+    float:  right;
+}
+
+@media screen and (max-width: 1024px) {
+    .software-info {
+		margin: 7% 0 0;
+	}
+}
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .filters-container {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    .posts-grid-container {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+	.card-pros, .card-cons {
+		width: 100%;
+		float: left;
+	}
+	ul.pros, ul.cons {
+		margin:0;
+	}
+	ul.features {
+		margin: 10px 10px 10px 25px;
+		/* list-style: auto; */
+	}
+	.software-card img {
+		width: 40%;
+		max-height: 150px;
+		object-fit: contain;
+		float: left;
+		margin: 0px 7.5% 0 2.5%;
+	}
+	.software-info {
+		margin: 5% 0 0;
+		width: 50%;
+		float: left;
+		overflow: hidden;
+	}
+	.software-info h2{
+		font-size: 28px;
+		margin-bottom: 2%
+	}
+
+	/* Style for each dropdown filter */
+	.dopdown-filters-container{
+        width: 100%;
+        margin: 10PX 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        cursor: pointer;
+    }
+    .mobile-filters{
+        padding: 10px;
+        background-color: #1abc9c;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .dropdown-filter {
+        display: none;
+        width: 100%;
+        margin: 0;
+        border-radius: unset;
+        background-color: #f9f9f9;
+        border-bottom: 2px solid #fff;
+        border-top: none;
+        cursor: pointer;
+    }
+    .dropbtn {
+        border-bottom: none;
+        background-color: #f9f9f9;
+        color: black;
+    }
+    .dropbtn:active {
+        color: #fff;
+    }
+	
+}
+
+@media screen and (max-width: 480px) {
+    .software-info {
+		margin: 9% 0 0;
+		
+	}
+}
