@@ -73,8 +73,8 @@ function process_wordai() {
 
     // WordAi API endpoint and credentials
     $apiUrl = 'https://wai.wordai.com/api/';
-    $email = '';
-    $apiKey = '';
+    $email = 'name@email.com';
+    $apiKey = 'your-api-key';
 
     $mode = sanitize_text_field($_POST['mode']);
     $uniqueness = sanitize_text_field($_POST['uniqueness']);
