@@ -1,0 +1,189 @@
+.comparison-taxonomy-selector{
+	width: 100%;
+	margin: 15px 0;
+}
+
+.software-comparison-search{
+	width: 100%;
+	margin: auto;
+}
+.software-comparison-search input{
+	width: 49%;
+	margin: auto;
+	float: left;
+	
+}
+#software_input_1{
+	margin-right:1%;
+}
+#software_input_2{
+	margin-left:1%;
+}
+
+.compare_button{
+	width: 100%;
+	background-color:#1abc9c;
+	color:#fff;
+	margin: 15px 0;
+}
+.compare_button:hover{
+	color: #fff;
+	background-color: #1abc9c;
+	border: solid #1abc9c;
+
+}
+
+@media (max-width: 768px) {
+    .software-comparison-search input {
+        width:100%; 
+		margin: 10px 0;
+    }
+	
+	.comparison-taxonomy-selector{
+		margin: 15px 0;
+	}
+	.compare_button{
+		margin: 15px 0;
+	}
+}
+
+
+
+/* Comparison template */
+.software-comparison {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.software-comparison-container{
+	width: 100%;
+}
+
+.software {
+    width: 48%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 1%;
+    padding: 20px;
+	float:left;
+}
+
+.star {
+    font-size: 20px;
+}
+
+.star.full, .star.fractional { 
+	color: gold; 
+}
+
+.star.empty {
+    color: #ccc; /* Empty stars in light gray */
+}
+
+@media (max-width: 768px) {
+    .software {
+        width: 100%;
+    }
+    /* Example for a dropdown section */
+    .dropdown-section {
+        display: none; /* Initially hide */
+    }
+    .dropdown-section.open {
+        display: block; /* Show when triggered */
+    }
+}
+
+.comparison-section .dropdown-content {
+    display: none; /* Initially hide the dropdown content */
+}
+
+.comparison-columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.software-column {
+    width: 50%;
+    float: left;
+}
+
+@media (max-width: 768px) {
+
+    .software-column {
+        width: 50%;
+    	float: left;
+    }
+	
+}
+
+
+.software h4 {
+    margin-top: 0;
+}
+
+.package {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+
+
+.dropdown-toggle {
+    background-color: #1abc9c;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.dropdown-toggle:hover {
+    background-color: #fff;
+    border: 1px solid #1abc9c;
+	color: #1abc9c;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.dropdown-content {
+    display: none; /* Initially hidden */
+    border: 1px solid #ddd;
+    border-top: none; /* Seamless connection with toggle button */
+}
+
+@media (min-width: 768px) {
+    .dropdown-content {
+        display: block; /* Automatically display on larger screens */
+    }
+}
+
+
+.pros, .cons {
+    margin-top: 10px;
+}
+
+.pros h5, .cons h5 {
+    margin-bottom: 5px;
+}
+
+.pros ul, .cons ul {
+    list-style-type: none; /* Removes the default list styling */
+    padding-left: 0; /* Aligns the list with the section content */
+}
+
+.pros li:before, .cons li:before {
+    content: "• "; /* Adds a custom bullet point */
+    color: #007bff; /* Example color for Pros */
+}
+
+.cons li:before {
+    color: #dc3545; /* Example color for Cons */
+}
+
+.comparison-img{
+    height: 120px;
+    max-width: 100%;
+}
